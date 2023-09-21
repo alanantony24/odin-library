@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigationContainer {
+    margin: 25px 25px;
+}
+
+.mainBodyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+}
