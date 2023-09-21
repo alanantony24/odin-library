@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyLibrary</title>
-    <link href="index.css" rel="stylesheet">
-</head>
-<body>
-    
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="mainContainer">
-        <div class="navigationContainer">
-            <nav>
-                <h1>MyLibrary</h1>
-            </nav>
-        </div>
-        <div class="mainBodyContainer">
-            <button>Add Book</button>
-        </div>
-        <div class="footerContainer">
-            <footer>made by alan</footer>
-        </div>
+      <div class="navigationContainer">
+        <nav>
+          <h1>MyLibrary</h1>
+        </nav>
+      </div>
+      <div class="mainBodyContainer">
+        <button id="showDialog">Add Book</button>
+        <!-- A modal dialog containing a form -->
+        <dialog id="bookDialog">
+          <form>
+            <p>
+              <label>
+                Author
+              </label>
+              <input type="text">
+              <label>
+                Title
+              </label>
+              <input type="text">
+              <label>
+                Number of Pages
+              </label>
+              <input type="number">
+              <label>
+                Read
+              </label>
+              <input type="checkbox">
+            </p>
+            <div>
+              <button value="cancel" formmethod="dialog">Cancel</button>
+              <button id="confirmBtn" value="default">Confirm</button>
+            </div>
+          </form>
+        </dialog>
+
+        <output></output>
+
+      </div>
+      <div class="footerContainer">
+        <footer>made by alan</footer>
+      </div>
     </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
