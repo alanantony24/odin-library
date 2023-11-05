@@ -1,7 +1,7 @@
 //Accessing elements
 const showDialogButton = document.getElementById("showDialogButton");
 const addBookDialog = document.getElementById("addBookDialog");
-const confirmBtn = addBookDialog.querySelector("#confirmBtn");
+const addBookForm = addBookDialog.querySelector(".addBookForm");
 var div = document.getElementById("outputCards");
 
 //data is stored in this list
@@ -67,7 +67,7 @@ showDialogButton.addEventListener("click", () => {
 });
 
 // Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.
-confirmBtn.addEventListener("click", (event) => {
+addBookForm.addEventListener("submit", (event) => {
   event.preventDefault(); // We don't want to submit this fake form
   addBooksToLibrary();
   displayBooks();
